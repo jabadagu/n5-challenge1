@@ -17,7 +17,7 @@ const CartSummary = ({ totalItems, totalPrice }) => {
         </Card.Body>
       </Card>
 
-      <Button className='w-100' variant='primary' as={NavLink} to='/products'>
+      <Button className='w-100 btn-custom' variant='primary' as={NavLink} to='/products'>
         Seguir comprando
       </Button>
     </div>
