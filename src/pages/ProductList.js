@@ -100,7 +100,7 @@ const ProductList = () => {
           <div className='row'>
             {state.products.length > 0
               ? state.products.map((item, index) => (
-                  <div key={index} className='col mb-3'>
+                  <div key={index} className='col'>
                     <ProductCard
                       product={item}
                       updateCartCount={updateCartCount}

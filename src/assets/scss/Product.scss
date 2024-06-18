@@ -60,6 +60,9 @@
 
 .products-container {
   padding: 20px 40px;
+  @media (max-width: 768px) {
+    padding: 20px 8px;
+  }
 
   h1 {
     text-align: center;
@@ -73,6 +76,9 @@
 
   .col {
     padding: 15px;
+    @media (max-width: 768px) {
+      padding: 8px;
+    }
 
     @media (min-width: 768px) {
       flex: 0 0 33.3333%;
