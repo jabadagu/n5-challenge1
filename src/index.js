@@ -11,12 +11,10 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-  <React.StrictMode>
     <ThemeProvider>
       <CartProvider>
         <App />        
       </CartProvider>
     </ThemeProvider>
-  </React.StrictMode>
   </React.StrictMode>
 );

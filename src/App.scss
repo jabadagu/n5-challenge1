@@ -54,6 +54,10 @@ body {
   background-color: $dark-bg;
 }
 
+.limit-msg {
+  font-size: 0.563rem;
+}
+
 .dark-mode {
   .modal-content {
     background-color: $color6 !important;

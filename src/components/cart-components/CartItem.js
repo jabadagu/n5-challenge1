@@ -51,10 +51,11 @@ const CartItem = ({ item }) => {
         </div>
         <div className='flex-grow-1 c-texta-left'>
           <h5>{item.name}</h5>
-          <p>Precio: S/{item.price.toFixed(2)}</p>
+          <p>Precio: $ {item.price.toFixed(2)}</p>
           <div style={{ width: "15rem" }}>
             <QuantityControl
               quantity={item.quantity}
+              maxQuantity={item.amount}
               handleIncrease={handleIncrease}
               handleDecrease={handleDecrease}
               className='c-with-100'

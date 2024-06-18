@@ -37,7 +37,11 @@ const AddProductModal = ({ show, handleClose, onAddProduct }) => {
   };
 
   return (
-    <Modal data-testid="modal" show={show} onHide={handleClose} className={isDarkMode ? 'dark-mode' : ''}>
+    <Modal
+      data-testid='modal'
+      show={show}
+      onHide={handleClose}
+      className={isDarkMode ? "dark-mode" : ""}>
       <Modal.Header closeButton>
         <Modal.Title>Agregar Producto</Modal.Title>
       </Modal.Header>
@@ -83,7 +87,11 @@ const AddProductModal = ({ show, handleClose, onAddProduct }) => {
             />
           </Form.Group>
 
-          <Button variant='primary' type='submit' data-testid="guardar-prod">
+          <Button
+            variant='primary'
+            type='submit'
+            data-testid='guardar-prod'
+            className='c-mt-20'>
             Guardar
           </Button>
         </Form>

@@ -1,5 +1,5 @@
 import ProductList from "./pages/ProductList";
-import "./assets/scss/main.scss";
+import "./assets/scss/Main.scss";
 import Header from "./sections/header";
 import Home from "./pages/home";
 import Cart from "./pages/cart";

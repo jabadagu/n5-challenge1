@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import { useTheme } from "../context/ThemeContext";
-import "../assets/scss/main.scss";
+import "../assets/scss/Main.scss";
 
 const Header = () => {
   const { isDarkMode, toggleTheme } = useTheme();

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Modal, Button} from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import QuantityControl from "../QuantityControl";
 import "../../assets/scss/Modal.scss";
@@ -47,7 +47,11 @@ const ProductModal = ({ product, show, onHide, updateCartCount }) => {
   };
 
   return (
-    <Modal show={show} onHide={onHide} centered className={isDarkMode ? 'dark-mode' : ''}>
+    <Modal
+      show={show}
+      onHide={onHide}
+      centered
+      className={isDarkMode ? "dark-mode" : ""}>
       <Modal.Header closeButton>
         <Modal.Title>{product.name}</Modal.Title>
       </Modal.Header>
@@ -57,6 +61,7 @@ const ProductModal = ({ product, show, onHide, updateCartCount }) => {
           <p>Precio: ${product.price.toFixed(2)}</p>
           <QuantityControl
             quantity={quantity}
+            maxQuantity={product.amount}
             handleIncrease={handleIncrease}
             handleDecrease={handleDecrease}
           />

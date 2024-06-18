@@ -84,7 +84,7 @@ const ProductList = () => {
         <div className='container d-flex justify-content-between align-items-center mb-3'>
           <h4>Lista de productos</h4>
           <div className='d-flex'>
-            <button className='btn btn-primary' onClick={handleShowModal}>
+            <button className='btn btn-primary mr-3' onClick={handleShowModal}>
               Agregar Producto
             </button>
             <Link to='/products/cart' className='floating-cart-link'>

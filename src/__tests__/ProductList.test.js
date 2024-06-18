@@ -1,95 +1,3 @@
-/* import { render, screen, fireEvent } from '@testing-library/react';
-import { CartContext } from '../context/CartContext';
-import ProductList from '../pages/ProductList';
-import getProducts from '../hooks/useGetProducts';
-import addProducts from '../hooks/usePostProducts';
-import '@testing-library/jest-dom/extend-expect';
-import { MemoryRouter } from 'react-router';
-import { ThemeProvider } from '../context/ThemeContext';
-
-jest.mock('../hooks/useGetProducts');
-jest.mock('../hooks/usePostProducts');
-jest.mock('../components/Loader', () => () => <div>Loading...</div>);
-jest.mock('../components/modals/ModalAddNewProduct', () => ({ show, handleClose, onAddProduct }) => (
-  show ? <div data-testid="modal">Modal</div> : null
-));
-
-const RouterWrapper = ({ children }) => {
-  return (
-      <MemoryRouter>
-          {children}
-      </MemoryRouter>
-  );
-};
-
-describe('ProductList Component', () => {
-  const products = [{ id: 1, name: 'Product 1', price: 3 }, { id: 2, name: 'Product 2', price: 3  }];
-  const dispatch = jest.fn();
-  const state = { products: [] };
-
-  beforeEach(() => {
-    dispatch.mockClear();
-    getProducts.mockClear();
-    addProducts.mockClear();
-  });
-
-  test('renders loading spinner initially', () => {
-
-    customRender(
-      <ThemeProvider>
-      <CartContext.Provider value={{ state, dispatch }}>
-        <ProductList />
-      </CartContext.Provider>
-      </ThemeProvider>
-
-    );
-    
-    expect(screen.getByText('Loading...')).toBeInTheDocument();
-  });
-
-
-
-  test('renders error message on fetch failure', async () => {
-    const errorMessage = 'Failed to fetch products';
-    getProducts.mockRejectedValueOnce(new Error(errorMessage));
-
-    customRender(
-      <ThemeProvider>
-      <CartContext.Provider value={{ state: { products: [] }, dispatch }}>
-        <ProductList />
-      </CartContext.Provider>
-      </ThemeProvider>
-
-    );
-
-    await screen.findByText(`Error: ${errorMessage}`);
-
-  });
-
-
-  test('shows modal when "Agregar Producto" button is clicked', () => {
-    customRender(
-      <ThemeProvider>
-      <CartContext.Provider value={{ state: { products }, dispatch }}>
-        <ProductList />
-      </CartContext.Provider>
-      </ThemeProvider>
-
-    );
-
-    fireEvent.click(screen.getByText('Agregar Producto'));
-    expect(screen.getByTestId('modal')).toBeInTheDocument();
-  });
-
-});
- 
-const customRender = (ui, options) =>
-  render(ui, { wrapper: RouterWrapper, ...options });
-
-export * from '@testing-library/react';
-export { customRender as render };
-
- */
 
 import { render, screen, fireEvent, waitFor, within } from '@testing-library/react';
 import { CartContext } from '../context/CartContext';
@@ -168,11 +76,6 @@ describe('ProductList Component', () => {
         </CartContext.Provider>
       </ThemeProvider>
     );
-
-    /* await waitFor(() => {
-      expect(dispatch).toHaveBeenCalledWith({ type: 'SET_PRODUCTS', payload: products });
-    });
- */
     expect(screen.getByText('Product 1')).toBeInTheDocument();
     expect(screen.getByText('Product 2')).toBeInTheDocument();
   });

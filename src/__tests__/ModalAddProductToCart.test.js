@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider, ThemeContext } from "../context/ThemeContext";
+import { ThemeProvider } from "../context/ThemeContext";
 import ProductModal from "../components/modals/ModalAddProductToCart";
 
 
@@ -68,5 +68,4 @@ describe("ProductModal component", () => {
 
     expect(window.location.pathname).toBe("/products/cart");
   });
-
 });

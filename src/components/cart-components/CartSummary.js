@@ -9,7 +9,7 @@ const CartSummary = ({ totalItems, totalPrice }) => {
         <Card.Body className='flex-wrap'>
           <div className='d-flex justify-content-between align-items-center flex-wrap'>
             <p>Productos: {totalItems}</p>
-            <p>Total: S/ {totalPrice.toFixed(2)}</p>
+            <p>Total: $ {totalPrice.toFixed(2)}</p>
           </div>
           <Button variant='success' className='w-100'>
             Proceder al Pago
@@ -17,7 +17,11 @@ const CartSummary = ({ totalItems, totalPrice }) => {
         </Card.Body>
       </Card>
 
-      <Button className='w-100 btn-custom' variant='primary' as={NavLink} to='/products'>
+      <Button
+        className='w-100 btn-custom'
+        variant='primary'
+        as={NavLink}
+        to='/products'>
         Seguir comprando
       </Button>
     </div>

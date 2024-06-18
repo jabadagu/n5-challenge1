@@ -1,11 +1,18 @@
 import { Form, Button } from "react-bootstrap";
 
-const QuantityControl = ({ quantity, handleIncrease, handleDecrease }) => {
+const QuantityControl = ({ quantity, maxQuantity, handleIncrease, handleDecrease }) => {
+  const handleIncreaseClick = () => {
+    if (quantity < maxQuantity) {
+      handleIncrease();
+    }
+  };
+
   const handleDecreaseClick = () => {
     if (quantity > 1) {
       handleDecrease();
     }
   };
+
   return (
     <Form>
       <Form.Group controlId='quantity' className='quantity-control'>
@@ -28,10 +35,15 @@ const QuantityControl = ({ quantity, handleIncrease, handleDecrease }) => {
             variant='outline-secondary'
             className='button-custom'
             size='sm'
-            onClick={handleIncrease}>
+            onClick={handleIncreaseClick}>
             +
           </Button>
         </div>
+        {quantity >= maxQuantity && (
+          <small className='text-danger limit-msg'>
+            No puedes agregar más de {maxQuantity} unidades.
+          </small>
+        )}
       </Form.Group>
     </Form>
   );

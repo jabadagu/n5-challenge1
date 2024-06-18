@@ -10,6 +10,7 @@ const item = {
   name: 'Test Product',
   price: 10.0,
   quantity: 1,
+  amount: 5,
   image: 'https://via.placeholder.com/100',
   isChecked: false,
 };
@@ -31,7 +32,7 @@ describe('CartItem Component', () => {
     renderComponent(item);
 
     expect(screen.getByText('Test Product')).toBeInTheDocument();
-    expect(screen.getByText('Precio: S/10.00')).toBeInTheDocument();
+    expect(screen.getByText('Precio: $ 10.00')).toBeInTheDocument();
     expect(screen.getByRole('checkbox')).not.toBeChecked();
   });
 

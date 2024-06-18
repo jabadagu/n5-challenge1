@@ -1,26 +1,27 @@
-import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
+import Axios from 'axios';
+import axiosMock from 'axios-mock-adapter';
 import getProducts from '../hooks/useGetProducts';
 
-const mock = new MockAdapter(axios);
+const mock = new axiosMock(Axios);
 
 describe('getProducts', () => {
-  it('should fetch products successfully', async () => {
-    const endpoint = 'products';
-    const mockResponse = [
-      { id: '1', name: 'Leche', image: '...', amount: 2, price: 75000 },
-      { id: '2', name: 'Cereal', image: '...', amount: 3, price: 85300 },
-    ];
+  const endpoint = '/products';
 
-    mock.onGet(`${process.env.REACT_APP_API_ENDPOINT}${endpoint}`).reply(200, mockResponse);
-
-    const result = await getProducts(endpoint);
-    expect(result).toEqual(mockResponse);
+  beforeEach(() => {
+    mock.reset();
   });
 
-  it('should handle errors', async () => {
-    const endpoint = 'products';
+  test('successfully fetches data from API', async () => {
+    const mockData = [{ id: 1, name: 'Product 1' }, { id: 2, name: 'Product 2' }];
+    
+    mock.onGet(`${process.env.REACT_APP_API_ENDPOINT}${endpoint}`).reply(200, mockData);
 
+    const result = await getProducts(endpoint);
+
+    expect(result).toEqual(mockData);
+  });
+
+  test('handles API errors', async () => {
     mock.onGet(`${process.env.REACT_APP_API_ENDPOINT}${endpoint}`).reply(500);
 
     await expect(getProducts(endpoint)).rejects.toThrow();

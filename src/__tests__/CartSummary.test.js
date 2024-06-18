@@ -14,7 +14,7 @@ describe('CartSummary', () => {
     );
 
     expect(screen.getByText(`Productos: ${totalItems}`)).toBeInTheDocument();
-    expect(screen.getByText(`Total: S/ ${totalPrice.toFixed(2)}`)).toBeInTheDocument();
+    expect(screen.getByText(`Total: $ ${totalPrice.toFixed(2)}`)).toBeInTheDocument();
 
     const proceedButton = screen.getByText('Proceder al Pago');
     expect(proceedButton).toBeInTheDocument();
