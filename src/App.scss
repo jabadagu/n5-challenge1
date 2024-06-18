@@ -1,0 +1,85 @@
+@import "./assets/scss/variables.scss";
+@import "./assets/scss/main.scss";
+
+body {
+  background-color: $light-bg;
+  color: $light-text;
+  height: 100vh;
+  .dark-mode {
+    background-color: $dark-bg !important;
+    color: $dark-text !important;
+    min-height: 100vh;
+  }
+}
+
+.navbar {
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: #f8f8f8;
+  border-color: #e3e3e3;
+}
+
+.dark-mode .navbar {
+  background-color: $color3 !important;
+  color: white;
+  .navbar-brand,
+  .btn {
+    color: $dark-text !important;
+  }
+  .nav-link {
+    color: $dark-text !important;
+  }
+}
+
+.dark-mode .card {
+  background-color: $color5 !important;
+  color: $dark-text !important;
+}
+
+.dark-mode .btn-secondary {
+  background-color: $color3 !important;
+  color: $dark-text !important;
+}
+
+.dark-mode .button-custom {
+  color: $dark-bg;
+  border-color: $dark-bg;
+  background-color: $light-bg;
+}
+
+.button-custom {
+  color: $light-bg;
+  background-color: $dark-bg;
+}
+
+.dark-mode {
+  .modal-content {
+    background-color: $color6 !important;
+  }
+  .form-control {
+    background-color: $color7;
+    color: $dark-text;
+    border-color: $color7;
+  }
+
+  .form-control-file {
+    color: $light-text;
+  }
+
+  .btn-primary {
+    background-color: $color3;
+    border-color: $color5;
+  }
+
+  .btn-primary:hover {
+    background-color: $color5;
+    border-color: $color6;
+  }
+
+  .btn-primary:focus,
+  .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba($color7, 0.5);
+  }
+}

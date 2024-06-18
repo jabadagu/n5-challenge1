@@ -1,0 +1,57 @@
+// custom css
+.c-mr-10 {
+  margin-right: 0.625rem;
+}
+
+.c-mr-15 {
+  margin-right: 0.938rem;
+}
+
+.c-mt-20 {
+  margin-top: 1.25rem;
+}
+
+.c-mb-10 {
+  margin-bottom: 0.625rem;
+}
+
+.c-mb-150 {
+  margin-bottom: 12rem;
+}
+
+.c-ml-auto {
+  margin-left: auto;
+}
+
+.c-ml-10 {
+  margin-left: 0.625rem;
+}
+
+.c-pad-10 {
+  padding: 0.625rem;
+}
+
+.c-with-100 {
+  width: 6.25rem;
+}
+
+.c-height-40 {
+  height: 2.5rem;
+}
+
+.c-texta-left {
+  text-align: left;
+}
+
+.trash-custom {
+  cursor: pointer;
+  color: red;
+  width: 22px;
+  height: 22px;
+}
+
+@media (min-width: 768px) {
+  .trash-custom {
+    margin-bottom: 95px;
+  }
+}

@@ -1,0 +1,11 @@
+// Variables.scss
+@import "./Variables.scss";
+
+// Modal.scss
+
+.modal-image {
+  width: 65%;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}

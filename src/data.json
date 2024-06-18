@@ -1,0 +1,75 @@
+{
+    "products": [
+      {
+        "name": "Leche",
+        "price": 75000,
+        "amount": 2,
+        "id": 1,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDhWT7LZaWwSE2nkdYY-ndf2C2nVWBHsz0Q&s"
+      },
+      {
+        "name": "Cereal",
+        "price": 85300,
+        "amount": 3,
+        "id": 2,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqf0xwkP6H51XkyXs4C_nhqrIDgVgrvNCrvw&s"
+      },
+      {
+        "name": "Huevos",
+        "price": 75000,
+        "amount": 12,
+        "id": 3,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7w1NuRTir3oCIcPTRN39lD72UfEUN_zivw&s"
+      },
+      {
+        "name": "Carne",
+        "price": 85300,
+        "amount": 21,
+        "id": 4,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUc9YxGAHFqkys9wVqzMn2R_t0YVV5x9tJTg&s"
+      },
+      {
+        "name": "Queso",
+        "price": 75000,
+        "amount": 8,
+        "id": 5,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMV6IAnOUreyyN2xnRiRtSFC4_njrmcirf_g&s"
+      },
+      {
+        "name": "Arroz",
+        "price": 85300,
+        "amount": 9,
+        "id": 6,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvBEHrulNebN9NNveG1mKayQVXOQANd3t-8w&s"
+      },
+      {
+        "name": "Frijoles",
+        "price": 85300,
+        "amount": 32,
+        "id": 7,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi0GHQE0obzpU1JHxYp-CXRB7sEZRGBd5gJw&s"
+      },
+      {
+        "name": "Lentejas",
+        "price": 175000,
+        "amount": 42,
+        "id": 8,
+        "image": "https://acdn.mitiendanube.com/stores/001/857/395/products/lentejas1-c97686cb33659dbff916910019348018-480-0.jpg"
+      },
+      {
+        "name": "Avena",
+        "price": 85300,
+        "amount": 56,
+        "id": 9,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7IIS_eBKv4LkXWOz2xoWgHxLs8jwMRn3eCg&s"
+      },
+      {
+        "name": "Pollo",
+        "price": 375000,
+        "amount": 23,
+        "id": 10,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWbQCLB5g4Ae6qSH7Cehx5oQDVVif0YAK1Nw&s"
+      }
+    ]
+  }
+  
