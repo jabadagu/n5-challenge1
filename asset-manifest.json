@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/n5-challenge1/static/css/main.1cd55fc8.css",
-    "main.js": "/n5-challenge1/static/js/main.c69aaf67.js",
+    "main.js": "/n5-challenge1/static/js/main.bcb6cf41.js",
     "static/media/home.webp": "/n5-challenge1/static/media/home.bcf9ad1ea8e636df5bec.webp",
     "index.html": "/n5-challenge1/index.html",
     "main.1cd55fc8.css.map": "/n5-challenge1/static/css/main.1cd55fc8.css.map",
-    "main.c69aaf67.js.map": "/n5-challenge1/static/js/main.c69aaf67.js.map"
+    "main.bcb6cf41.js.map": "/n5-challenge1/static/js/main.bcb6cf41.js.map"
   },
   "entrypoints": [
     "static/css/main.1cd55fc8.css",
-    "static/js/main.c69aaf67.js"
+    "static/js/main.bcb6cf41.js"
   ]
 }
