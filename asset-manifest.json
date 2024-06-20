@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/n5-challenge1/static/css/main.8e1e923d.css",
-    "main.js": "/n5-challenge1/static/js/main.1431c5a8.js",
+    "main.css": "/n5-challenge1/static/css/main.390c5386.css",
+    "main.js": "/n5-challenge1/static/js/main.31d1104e.js",
     "static/media/home.webp": "/n5-challenge1/static/media/home.bcf9ad1ea8e636df5bec.webp",
     "index.html": "/n5-challenge1/index.html",
-    "main.8e1e923d.css.map": "/n5-challenge1/static/css/main.8e1e923d.css.map",
-    "main.1431c5a8.js.map": "/n5-challenge1/static/js/main.1431c5a8.js.map"
+    "main.390c5386.css.map": "/n5-challenge1/static/css/main.390c5386.css.map",
+    "main.31d1104e.js.map": "/n5-challenge1/static/js/main.31d1104e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e1e923d.css",
-    "static/js/main.1431c5a8.js"
+    "static/css/main.390c5386.css",
+    "static/js/main.31d1104e.js"
   ]
 }
